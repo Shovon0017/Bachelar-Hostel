@@ -2,8 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/view/screen/auth/SignIn.dart';
+
+import '../../../Common_widget/common_button.dart';
+import 'SignIn.dart';
 
 class Create extends StatefulWidget {
   const Create({super.key});
@@ -22,7 +23,7 @@ class _CreateState extends State<Create> {
         title: SizedBox(
             height: 40,
             width: 150,
-            child: Image.asset("images/pcmart.jpg")),
+            child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
       ),
       body:Center(

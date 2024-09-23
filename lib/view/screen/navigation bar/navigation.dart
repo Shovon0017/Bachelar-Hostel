@@ -1,7 +1,7 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/controller/getX%20controller/navigator_controller.dart';
+import 'package:bachelor_hostel/controller/getX%20controller/navigator_controller.dart';
 class NavigationBarShow extends StatelessWidget {
   const NavigationBarShow({super.key});
   @override

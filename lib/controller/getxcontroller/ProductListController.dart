@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:get/get.dart';
-import 'package:pc_mart/Model/productListModel.dart';
-import 'package:pc_mart/controller/api%20service/ProductListService.dart';
+
+import '../../model/productListModel.dart';
 
 
 class HomeController extends GetxController {

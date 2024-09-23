@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/controller/api%20service/product_description.dart';
-
 class ProductInfoController extends GetxController {
   RxInt selectedImgIndex = 0.obs;
   RxInt productQty = 1.obs;

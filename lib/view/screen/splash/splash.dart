@@ -22,7 +22,7 @@ class _SplashState extends State<Splash> {
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("images/pcmart.jpg",)
+            Image.asset("images/Bachelor Hostel logo.png",)
           ],
         ),
       ),

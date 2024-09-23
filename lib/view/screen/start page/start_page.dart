@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/view/screen/language%20selection/language_selection.dart';
+import 'package:bachelor_hostel/common%20widget/common_button.dart';
+import 'package:bachelor_hostel/view/screen/language%20selection/language_selection.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});

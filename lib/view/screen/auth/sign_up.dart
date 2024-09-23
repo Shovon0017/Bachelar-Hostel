@@ -1,15 +1,14 @@
 import 'dart:developer';
 
+import 'package:bachelar_hostel/controller/getxcontroller/sign_up.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/phone.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/confirm_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/common%20widget/common_loading_button.dart';
-import 'package:pc_mart/controller/getX%20controller/sign_up.dart';
-import 'package:pc_mart/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
-import 'package:pc_mart/view/screen/auth/widget/auth%20%20widget/phone.dart';
-import 'package:pc_mart/view/screen/auth/widget/confirm_password.dart';
 
-
+import '../../../Common_widget/common_button.dart';
+import '../../../Common_widget/common_loading_button.dart';
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
 

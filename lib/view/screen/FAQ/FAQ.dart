@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:pc_mart/view/screen/FAQ/search_FAQ.dart';
+import 'package:bachelor_hostel/view/screen/FAQ/search_FAQ.dart';
 class FAQ extends StatelessWidget {
   const FAQ({super.key});
 
@@ -13,7 +13,7 @@ class FAQ extends StatelessWidget {
         title: SizedBox(
             height: 32,
             width: 114,
-            child: Image.asset("images/pcmart.jpg")),
+            child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
       ),
       body: Center(

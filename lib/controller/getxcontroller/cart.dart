@@ -1,7 +1,6 @@
 
 import 'package:get/get.dart';
-import 'package:pc_mart/Model/CartProductShow.dart';
-import 'package:pc_mart/controller/api%20service/cart_product.dart';
+import '../../model/CartProductShow.dart';
 
 class CartController extends GetxController {
   RxBool isLoading = false.obs;

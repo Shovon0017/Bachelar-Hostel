@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/CommonIcon.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/controller/getX%20controller/logout.dart';
-import 'package:pc_mart/view/screen/FAQ/FAQ.dart';
-import 'package:pc_mart/view/screen/Order%20%20report/Order_report.dart';
-import 'package:pc_mart/view/screen/confirmOrder/confirmOrder.dart';
-import 'package:pc_mart/view/screen/notification/notification.dart';
-import 'package:pc_mart/view/screen/requested_order/requested_order.dart';
-import 'package:pc_mart/view/screen/setting/setting.dart';
-import 'package:pc_mart/view/screen/support/support.dart';
+import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
+import 'package:bachelor_hostel/common%20widget/common_button.dart';
+import 'package:bachelor_hostel/controller/getX%20controller/logout.dart';
+import 'package:bachelor_hostel/view/screen/FAQ/FAQ.dart';
+import 'package:bachelor_hostel/view/screen/Order%20%20report/Order_report.dart';
+import 'package:bachelor_hostel/view/screen/confirmOrder/confirmOrder.dart';
+import 'package:bachelor_hostel/view/screen/notification/notification.dart';
+import 'package:bachelor_hostel/view/screen/requested_order/requested_order.dart';
+import 'package:bachelor_hostel/view/screen/setting/setting.dart';
+import 'package:bachelor_hostel/view/screen/support/support.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -27,7 +27,7 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 32, width: 114, child: Image.asset("images/pcmart.jpg")),
+            height: 32, width: 114, child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
         actions: [
           Padding(

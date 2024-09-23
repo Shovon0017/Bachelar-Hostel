@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/CommonIcon.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/common%20widget/common_text_field.dart';
-import 'package:pc_mart/view/screen/OrderTrack/OrderTrack.dart';
-import 'package:pc_mart/view/screen/notification/notification.dart';
+import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
+import 'package:bachelor_hostel/common%20widget/common_button.dart';
+import 'package:bachelor_hostel/common%20widget/common_text_field.dart';
+import 'package:bachelor_hostel/view/screen/OrderTrack/OrderTrack.dart';
+import 'package:bachelor_hostel/view/screen/notification/notification.dart';
 class OrderReport extends StatelessWidget {
   const OrderReport({super.key});
 
@@ -18,7 +18,7 @@ class OrderReport extends StatelessWidget {
         title: SizedBox(
             height: 32,
             width: 114,
-            child: Image.asset("images/pcmart.jpg")),
+            child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
         actions: [
           Padding(

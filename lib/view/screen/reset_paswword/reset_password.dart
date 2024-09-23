@@ -1,12 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/common%20widget/common_text.dart';
-import 'package:pc_mart/controller/getX%20controller/reset_pass_controller.dart';
-import 'package:pc_mart/view/screen/auth/SignIn.dart';
-import 'package:pc_mart/view/screen/auth/widget/auth%20%20widget/phone.dart';
-import 'package:pc_mart/view/screen/auth/widget/confirm_password.dart';
+import 'package:bachelor_hostel/common%20widget/common_button.dart';
+import 'package:bachelor_hostel/common%20widget/common_text.dart';
+import 'package:bachelor_hostel/controller/getX%20controller/reset_pass_controller.dart';
+import 'package:bachelor_hostel/view/screen/auth/SignIn.dart';
+import 'package:bachelor_hostel/view/screen/auth/widget/auth%20%20widget/phone.dart';
+import 'package:bachelor_hostel/view/screen/auth/widget/confirm_password.dart';
 class ResetPass extends StatelessWidget {
   const ResetPass({super.key});
 

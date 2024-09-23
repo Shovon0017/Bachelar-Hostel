@@ -1,7 +1,17 @@
 import 'dart:developer';
 
+import 'package:bachelar_hostel/view/screen/auth/sign_up.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/confirm_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../Common_widget/common_button.dart';
+import '../../../Common_widget/common_loading_button.dart';
+import '../../../Common_widget/common_text.dart';
+import '../../../controller/api-controller/auth/sign_in_service.dart';
+import '../../../controller/getxcontroller/sign_in.dart';
+import '../forget_password/forget_password.dart';
 class SignIn extends StatelessWidget {
   const SignIn({super.key});
 

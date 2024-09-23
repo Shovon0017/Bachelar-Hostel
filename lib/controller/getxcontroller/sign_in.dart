@@ -4,6 +4,8 @@ import 'package:bachelar_hostel/controller/api-controller/auth/sign_in_service.d
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../view/screen/navigation bar/navigation.dart';
+
 
 class SignInController extends GetxController {
   final formKey = GlobalKey<FormState>();

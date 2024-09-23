@@ -1,9 +1,10 @@
 import 'dart:developer';
 
 import 'package:bachelar_hostel/controller/api-controller/auth/sign_up.dart';
-import 'package:bachelar_hostel/controller/getxcontroller/auth/sign_up.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+
+import '../../view/screen/auth/SignIn.dart';
 
 class SignUpController extends GetxController {
   TextEditingController emailController = TextEditingController();

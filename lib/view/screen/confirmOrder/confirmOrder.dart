@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/CommonIcon.dart';
-import 'package:pc_mart/view/screen/notification/notification.dart';
+import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
+import 'package:bachelor_hostel/view/screen/notification/notification.dart';
 
 class ConfirmOrder extends StatefulWidget {
   const ConfirmOrder({super.key});
@@ -20,7 +20,7 @@ class _ConfirmOrderState extends State<ConfirmOrder> {
         title: SizedBox(
             height: 32,
             width: 114,
-            child: Image.asset("images/pcmart.jpg")),
+            child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
         actions: [
           Padding(

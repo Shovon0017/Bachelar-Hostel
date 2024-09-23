@@ -2,14 +2,14 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/CommonIcon.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/common%20widget/custom_order_shimmer_loading.dart';
-import 'package:pc_mart/controller/getX%20controller/cart.dart';
-import 'package:pc_mart/view/screen/OrderInfo/OrderInfo.dart';
-import 'package:pc_mart/view/screen/cart/widget/increment_decrement.dart';
-import 'package:pc_mart/view/screen/cart/widget/no_cart_data_found.dart';
-import 'package:pc_mart/view/screen/notification/notification.dart';
+import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
+import 'package:bachelor_hostel/common%20widget/common_button.dart';
+import 'package:bachelor_hostel/common%20widget/custom_order_shimmer_loading.dart';
+import 'package:bachelor_hostel/controller/getX%20controller/cart.dart';
+import 'package:bachelor_hostel/view/screen/OrderInfo/OrderInfo.dart';
+import 'package:bachelor_hostel/view/screen/cart/widget/increment_decrement.dart';
+import 'package:bachelor_hostel/view/screen/cart/widget/no_cart_data_found.dart';
+import 'package:bachelor_hostel/view/screen/notification/notification.dart';
 
 class Cart extends StatelessWidget {
   const Cart({super.key});
@@ -24,7 +24,7 @@ class Cart extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 40, width: 150, child: Image.asset("images/pcmart.jpg")),
+            height: 40, width: 150, child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
         actions: [
           Padding(

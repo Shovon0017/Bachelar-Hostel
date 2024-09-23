@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/common_button.dart';
-import 'package:pc_mart/view/screen/navigation%20bar/navigation.dart';
+import 'package:bachelor_hostel/common%20widget/common_button.dart';
+import 'package:bachelor_hostel/view/screen/navigation%20bar/navigation.dart';
 
 class NoCartProductFoundWidget extends StatelessWidget {
   const NoCartProductFoundWidget({super.key});

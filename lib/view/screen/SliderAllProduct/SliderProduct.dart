@@ -3,12 +3,12 @@ import 'dart:developer';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/common%20widget/CommonIcon.dart';
-import 'package:pc_mart/common%20widget/common_text.dart';
-import 'package:pc_mart/common%20widget/search_field.dart';
-import 'package:pc_mart/controller/getX%20controller/ProductListController.dart';
-import 'package:pc_mart/view/screen/notification/notification.dart';
-import 'package:pc_mart/view/screen/product_info/product_info.dart';
+import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
+import 'package:bachelor_hostel/common%20widget/common_text.dart';
+import 'package:bachelor_hostel/common%20widget/search_field.dart';
+import 'package:bachelor_hostel/controller/getX%20controller/ProductListController.dart';
+import 'package:bachelor_hostel/view/screen/notification/notification.dart';
+import 'package:bachelor_hostel/view/screen/product_info/product_info.dart';
 
 class SliderProductScreen extends StatelessWidget {
   const SliderProductScreen({super.key});
@@ -21,7 +21,7 @@ class SliderProductScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 40, width: 150, child: Image.asset("images/pcmart.jpg")),
+            height: 40, width: 150, child: Image.asset("images/Bachelor Hostel logo.png")),
         centerTitle: true,
         actions: [
           Padding(

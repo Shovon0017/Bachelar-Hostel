@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/controller/getX%20controller/forget_password_controller.dart';
+
+import '../../../../controller/getxcontroller/forget_password_controller.dart';
 
 class ForgetPass extends StatelessWidget {
   const ForgetPass({super.key});
