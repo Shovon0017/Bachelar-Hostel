@@ -1,9 +1,8 @@
 import 'dart:developer';
 
+import 'package:bachelar_hostel/controller/api-controller/auth/sign_in_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/controller/api%20service/auth/sign_in_service.dart';
-import 'package:pc_mart/view/screen/navigation%20bar/navigation.dart';
 
 
 class SignInController extends GetxController {

@@ -1,8 +1,8 @@
 
+import 'package:bachelar_hostel/controller/getxcontroller/auth/log_out.dart';
+import 'package:bachelar_hostel/view/screen/auth/SignIn.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/controller/api%20service/auth/log_out.dart';
-import 'package:pc_mart/view/screen/auth/SignIn.dart';
 class LogOutService extends GetxController {
   final formKey = GlobalKey<FormState>();
   RxBool isLoading = false.obs;
