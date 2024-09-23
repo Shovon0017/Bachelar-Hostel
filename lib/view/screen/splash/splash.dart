@@ -1,8 +1,8 @@
 
 
+import 'package:bachelar_hostel/controller/getxcontroller/Splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_mart/controller/getX%20controller/Splash.dart';
 
 class Splash extends StatefulWidget {
 
