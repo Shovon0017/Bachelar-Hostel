@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import '../../../Common_widget/CommonIcon.dart';
 import '../../../Common_widget/common_text.dart';
 import '../../../Common_widget/search_field.dart';
-import '../../../controller/getxcontroller/ProductListController.dart';
+import '../../../controller/getxcontroller/hostelListController.dart';
 import '../notification/notification.dart';
 import '../product_info/product_info.dart';
 
@@ -51,7 +51,7 @@ class SliderProductScreen extends StatelessWidget {
               const SizedBox(height: 10),
               Obx(() => controller.isLoading.isTrue
                   ? const Center(child: CircularProgressIndicator())
-                  : controller.productList.isEmpty
+                  : controller.hostelList.isEmpty
                   ? const Center(
                   child: CommonText(title: "Empty Product List"))
                   : Column(
@@ -63,7 +63,7 @@ class SliderProductScreen extends StatelessWidget {
                     child: GridView.builder(
                       physics: const PageScrollPhysics(),
                       shrinkWrap: true,
-                      itemCount: controller.productList.length,
+                      itemCount: controller.hostelList.length,
                       gridDelegate:
                       const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
@@ -71,10 +71,10 @@ class SliderProductScreen extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return InkWell(
                           onTap: () {
-                            Get.to(() => ProductInfo(
-                                id: index,
-                                productData:
-                                controller.productList[index]));
+                            // Get.to(() => ProductInfo(
+                            //     id: index,
+                            //     productData:
+                            //     controller.productList[index]));
                           },
                           child: Card(
                             elevation: 4,
@@ -93,16 +93,19 @@ class SliderProductScreen extends StatelessWidget {
                                       width: 100,
                                       child: Image(
                                           image: AssetImage(
-                                              "${controller.productList[index].image}"))),
+                                              "${controller.hostelList[index].image}"))),
                                   CommonText(
                                       title:
-                                      "ID : ${controller.productList[index].productId}"),
+                                      "Name : ${controller.hostelList[index].name}"),
                                   CommonText(
                                       title:
-                                      "Name : ${controller.productList[index].nameEn}"),
+                                      "Environment : ${controller.hostelList[index].environment}"),
                                   CommonText(
                                       title:
-                                      "Price : ${controller.productList[index].regPrice}Tk"),
+                                      "Address : ${controller.hostelList[index].address}"),
+                                  CommonText(
+                                      title:
+                                      "Price : ${controller.hostelList[index].price}Tk"),
                                 ],
                               ),
                             ),
