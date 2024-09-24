@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/view/screen/auth/SignIn.dart';
+import '../../../Common_widget/common_button.dart';
+import '../auth/SignIn.dart';
 class LanguageSelection extends StatelessWidget {
   const LanguageSelection({super.key});
   @override

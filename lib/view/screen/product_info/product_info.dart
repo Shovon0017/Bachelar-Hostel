@@ -3,13 +3,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/Model/productListModel.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/controller/getX%20controller/product_Info.dart';
-import 'package:bachelor_hostel/view/screen/OrderInfo/OrderInfo.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
 
+import '../../../Common_widget/CommonIcon.dart';
+import '../../../Common_widget/common_button.dart';
+import '../../../controller/getxcontroller/product_Info.dart';
+import '../../../model/productListModel.dart';
+import '../OrderInfo/OrderInfo.dart';
+import '../notification/notification.dart';
 
 class ProductInfo extends StatelessWidget {
    ProductInfo({super.key, required this.id, required this.productData});

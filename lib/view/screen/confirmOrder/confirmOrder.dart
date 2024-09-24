@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
+
+import '../../../Common_widget/CommonIcon.dart';
+import '../notification/notification.dart';
 
 class ConfirmOrder extends StatefulWidget {
   const ConfirmOrder({super.key});

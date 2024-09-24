@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/view/screen/navigation%20bar/navigation.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
+
+import '../../../Common_widget/CommonIcon.dart';
+import '../../../Common_widget/common_button.dart';
+import '../navigation bar/navigation.dart';
+import '../notification/notification.dart';
 
 class Paylater extends StatelessWidget {
   const Paylater({super.key});

@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/controller/getX%20controller/logout.dart';
-import 'package:bachelor_hostel/view/screen/FAQ/FAQ.dart';
-import 'package:bachelor_hostel/view/screen/Order%20%20report/Order_report.dart';
-import 'package:bachelor_hostel/view/screen/confirmOrder/confirmOrder.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
-import 'package:bachelor_hostel/view/screen/requested_order/requested_order.dart';
-import 'package:bachelor_hostel/view/screen/setting/setting.dart';
-import 'package:bachelor_hostel/view/screen/support/support.dart';
+
+import '../../../Common_widget/CommonIcon.dart';
+import '../../../Common_widget/common_button.dart';
+import '../../../controller/getxcontroller/logout.dart';
+import '../FAQ/FAQ.dart';
+import '../Order  report/Order_report.dart';
+import '../confirmOrder/confirmOrder.dart';
+import '../notification/notification.dart';
+import '../requested_order/requested_order.dart';
+import '../setting/setting.dart';
+import '../support/support.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});

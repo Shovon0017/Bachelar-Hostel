@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/controller/getX%20controller/PaymentGetway.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
-import 'package:bachelor_hostel/view/screen/payLater/payLater.dart';
-import 'package:bachelor_hostel/view/screen/paymentScreen/paymentscreen.dart';
+
+import '../../../Common_widget/CommonIcon.dart';
+import '../../../Common_widget/common_button.dart';
+import '../../../controller/getxcontroller/PaymentGetway.dart';
+import '../notification/notification.dart';
+import '../payLater/payLater.dart';
+import '../paymentScreen/paymentscreen.dart';
 
 class OrderInfo extends StatelessWidget {
   const OrderInfo({super.key});

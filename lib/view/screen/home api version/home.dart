@@ -2,13 +2,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/common%20widget/common_text.dart';
-import 'package:bachelor_hostel/common%20widget/search_field.dart';
-import 'package:bachelor_hostel/controller/getX%20controller/ProductListController.dart';
-import 'package:bachelor_hostel/view/screen/SliderAllProduct/SliderProduct.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
-import 'package:bachelor_hostel/view/screen/product_info/product_info.dart';
+import '../../../Common_widget/CommonIcon.dart';
+import '../../../Common_widget/common_text.dart';
+import '../../../Common_widget/search_field.dart';
+import '../../../controller/getxcontroller/ProductListController.dart';
+import '../SliderAllProduct/SliderProduct.dart';
+import '../notification/notification.dart';
+import '../product_info/product_info.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

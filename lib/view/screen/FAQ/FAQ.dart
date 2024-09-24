@@ -1,7 +1,7 @@
 
 
+import 'package:bachelar_hostel/view/screen/FAQ/search_FAQ.dart';
 import 'package:flutter/material.dart';
-import 'package:bachelor_hostel/view/screen/FAQ/search_FAQ.dart';
 class FAQ extends StatelessWidget {
   const FAQ({super.key});
 

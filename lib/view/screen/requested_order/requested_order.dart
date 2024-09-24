@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
+
+import '../../../Common_widget/CommonIcon.dart';
+import '../notification/notification.dart';
 
 class Order extends StatefulWidget {
   const Order({super.key});
@@ -26,7 +27,7 @@ class _OrderState extends State<Order> {
           Padding(
             padding: const EdgeInsets.only(right: 10),
             child: CommonIconButton(onTap: (){
-              Get.to(()=>const NotificationShow());
+              Get.to(()=> NotificationShow());
             }),
           )
         ],

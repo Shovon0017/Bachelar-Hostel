@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/controller/getX%20controller/forget_password_controller.dart';
-import 'package:bachelor_hostel/view/screen/auth/widget/auth%20%20widget/phone.dart';
-import 'package:bachelor_hostel/view/screen/reset_paswword/reset_password.dart';
+import '../../../Common_widget/common_button.dart';
+import '../../../controller/getxcontroller/forget_password_controller.dart';
+import '../auth/widget/auth  widget/phone.dart';
+import '../reset_paswword/reset_password.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});

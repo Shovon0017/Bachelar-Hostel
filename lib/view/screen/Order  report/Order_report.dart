@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bachelor_hostel/common%20widget/CommonIcon.dart';
-import 'package:bachelor_hostel/common%20widget/common_button.dart';
-import 'package:bachelor_hostel/common%20widget/common_text_field.dart';
-import 'package:bachelor_hostel/view/screen/OrderTrack/OrderTrack.dart';
-import 'package:bachelor_hostel/view/screen/notification/notification.dart';
+import '../../../Common_widget/CommonIcon.dart';
+import '../../../Common_widget/common_button.dart';
+import '../../../Common_widget/common_text_field.dart';
+import '../OrderTrack/OrderTrack.dart';
+import '../notification/notification.dart';
 class OrderReport extends StatelessWidget {
   const OrderReport({super.key});
 
