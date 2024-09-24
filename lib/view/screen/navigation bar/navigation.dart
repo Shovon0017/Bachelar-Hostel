@@ -21,7 +21,7 @@ class NavigationBarShow extends StatelessWidget {
       (controller.bottomBarPages.length <= controller.maxCount.value)
           ? AnimatedNotchBottomBar(
         notchBottomBarController: controller.nController,
-        color: const Color(0xff9a0000),
+        color:  Colors.red,
         showLabel: true,
         textOverflow: TextOverflow.visible,
         maxLine: 1,
@@ -44,7 +44,7 @@ class NavigationBarShow extends StatelessWidget {
             ),
             activeItem: Icon(
               Icons.home_outlined,
-              color:Color(0xff9a0000),
+              color:Colors.red,
 
             ),
             itemLabel: 'Home',
@@ -57,7 +57,7 @@ class NavigationBarShow extends StatelessWidget {
             ),
             activeItem: Icon(
               Icons.shopping_cart,
-              color: Color(0xff9a0000),
+              color: Colors.red,
             ),
             itemLabel: 'Cart',
           ),
@@ -68,7 +68,7 @@ class NavigationBarShow extends StatelessWidget {
             ),
             activeItem: Icon(
               Icons.person,
-              color:Color(0xff9a0000),
+              color:Colors.red,
             ),
             itemLabel: 'Profile',
           ),

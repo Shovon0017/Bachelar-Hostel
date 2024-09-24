@@ -19,9 +19,9 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffFFFFFF),
       appBar: AppBar(
-        backgroundColor: const Color(0xffFFFFFF),
+        backgroundColor:Color(0xffFFFFFF) ,
         title: SizedBox(
-            height: 40, width: 150, child: Image.asset("images/Bachelor Hostel logo.png")),
+            height: 50, width: 150, child: Image.asset("images/appbar.png")),
         centerTitle: true,
         actions: [
           Padding(
@@ -48,7 +48,6 @@ class Home extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              Text("CATEGORY",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
               CarouselSlider(
                   items: [
                     InkWell(
@@ -95,7 +94,7 @@ class Home extends StatelessWidget {
                       autoPlay: true,
                       autoPlayInterval: Duration(seconds: 3),
                       enlargeCenterPage: true)),
-              Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
+              Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.red)),
               const SizedBox(height: 10),
               Obx(() => controller.isLoading.isTrue
                   ? const Center(child: CircularProgressIndicator())

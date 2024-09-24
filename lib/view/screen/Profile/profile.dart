@@ -28,7 +28,7 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 32, width: 114, child: Image.asset("images/Bachelor Hostel logo.png")),
+            height: 32, width: 114, child: Image.asset("images/appbar.png")),
         centerTitle: true,
         actions: [
           Padding(

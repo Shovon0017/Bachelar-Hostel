@@ -23,13 +23,13 @@ var value=-1;
         focusedBorder: OutlineInputBorder(
             borderSide:  const BorderSide(color: Colors.black),
             borderRadius: BorderRadius.circular(8)),
-        labelText: "Search Computer Accessories",
+        labelText: "Search Hostel",
         suffixIcon: InkWell(
             onTap: (){
               Get.defaultDialog(
                   title: "Filter",
                   titleStyle: const TextStyle(
-                      color:Color(0xff9a0000), fontWeight: FontWeight.bold),
+                      color:Colors.red, fontWeight: FontWeight.bold),
                   content: Column(
                     children: [
                       DropdownButtonFormField(
@@ -41,17 +41,17 @@ var value=-1;
                           items: const [
                             DropdownMenuItem(
                               value: -1,
-                              child: Text("Accessories"),
+                              child: Text("Room "),
                             ),
                             DropdownMenuItem(
                                 value: 0,
-                                child: Text("Mouse")),
+                                child: Text("Single")),
                             DropdownMenuItem(
                                 value: 1,
-                                child: Text("Keyboard")),
+                                child: Text("Double")),
                             DropdownMenuItem(
                                 value: 2,
-                                child: Text("Headphone"))
+                                child: Text("Multi"))
                           ],
                           onChanged: (v) {}),
                       const SizedBox(height: 10),
@@ -65,17 +65,17 @@ var value=-1;
                           items: const [
                             DropdownMenuItem(
                               value: -1,
-                              child: Text("HardWare"),
+                              child: Text("Range"),
                             ),
                             DropdownMenuItem(
                                 value: 0,
-                                child: Text("Ram")),
+                                child: Text("2000-4000 TK")),
                             DropdownMenuItem(
                                 value: 1,
-                                child: Text("SSD")),
+                                child: Text("4000-6000 Tk")),
                             DropdownMenuItem(
                                 value: 2,
-                                child: Text("Cooling System"))
+                                child: Text("6000-8000 Tk"))
                           ],
                           onChanged: (v) {}),
                       const SizedBox(height: 10),
@@ -88,17 +88,14 @@ var value=-1;
                           items: const [
                             DropdownMenuItem(
                               value: -1,
-                              child: Text("MotherBoard"),
+                              child: Text("Environment"),
                             ),
                             DropdownMenuItem(
                                 value: 0,
-                                child: Text("Msi")),
+                                child: Text("AC")),
                             DropdownMenuItem(
                                 value: 1,
-                                child: Text("Gygabyte")),
-                            DropdownMenuItem(
-                                value: 2,
-                                child: Text("ColorFull"))
+                                child: Text("Non-AC")),
                           ],
                           onChanged: (v) {}),
                       const SizedBox(height: 10),
@@ -107,7 +104,7 @@ var value=-1;
                     ],
                   ));
             },
-            child: const Card(color:Color(0xff9a0000),child: Icon(Icons.search,color: Colors.white,)))
+            child: const Card(color:Colors.red,child: Icon(Icons.search,color: Colors.white,)))
       ),
     );
   }

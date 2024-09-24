@@ -1,3 +1,4 @@
+import 'package:bachelar_hostel/view/screen/home%20api%20version/home.dart';
 import 'package:bachelar_hostel/view/screen/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(debugShowCheckedModeBanner: false,
-      home:Splash() ,
+      home:Home() ,
     );
   }
 }

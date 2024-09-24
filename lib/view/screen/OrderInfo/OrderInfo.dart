@@ -21,7 +21,7 @@ class OrderInfo extends StatelessWidget {
         title: SizedBox(
             height: 32,
             width: 114,
-            child: Image.asset("images/Bachelor Hostel logo.png")),
+            child: Image.asset("images/appbar.png")),
         centerTitle: true,
         actions: [
           Padding(

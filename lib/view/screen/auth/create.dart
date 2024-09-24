@@ -21,9 +21,9 @@ class _CreateState extends State<Create> {
       appBar:AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 40,
+            height: 50,
             width: 150,
-            child: Image.asset("images/Bachelor Hostel logo.png")),
+            child: Image.asset("images/appbar.png")),
         centerTitle: true,
       ),
       body:Center(
