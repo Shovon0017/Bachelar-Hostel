@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:bachelar_hostel/controller/getxcontroller/sign_up.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/confirm_password.dart';
 import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
 import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/phone.dart';
-import 'package:bachelar_hostel/view/screen/auth/widget/confirm_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

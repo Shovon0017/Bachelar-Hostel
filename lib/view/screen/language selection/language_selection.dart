@@ -14,13 +14,13 @@ class LanguageSelection extends StatelessWidget {
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset("images/english select logo.png"),
-              const SizedBox(height: 90),
+
               CommonButton(buttonColor:Colors.grey ,
                   buttonName: "বাংলা",textColor: Colors.white, onTap: (){
                     Get.to(()=>const SignIn(
                     ));
               }),
-              CommonButton(buttonColor:const Color(0xff9a0000) ,
+              CommonButton(
                   buttonName: "English", onTap: (){
                 Get.to(()=>const SignIn(
                 ));

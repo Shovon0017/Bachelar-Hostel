@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:bachelar_hostel/view/screen/auth/sign_up.dart';
+import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/confirm_password.dart';
 import 'package:bachelar_hostel/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
-import 'package:bachelar_hostel/view/screen/auth/widget/confirm_password.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -30,7 +30,7 @@ class SignIn extends StatelessWidget {
                 key: signInController.formKey,
                 child: Column(
                   children: [
-                    const Text("Sign In",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 50,color: Color(0xff9a0000)),),
+                    const Text("Sign In",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 50,color: Colors.red),),
                     SizedBox(
                         height: 200,
                         width: 200,
@@ -47,7 +47,7 @@ class SignIn extends StatelessWidget {
                         InkWell(onTap: (){
                           Get.to(()=>const ForgetPassword());
                         },
-                            child: const CommonText(title: "Forget Password",fWeight: FontWeight.bold,fSize: 15,fColor:Color(0xff9a0000),)),
+                            child: const CommonText(title: "Forget Password",fWeight: FontWeight.bold,fSize: 15,fColor:Colors.red,)),
                       ],
                     ),
                     buildSizedBox(height: 10),
@@ -60,14 +60,14 @@ class SignIn extends StatelessWidget {
                         log("==========222222222222===============");
                         signInController.signInFun();
                       },
-                    ) : const CommonLoadingButton()),
+                    ) :  CommonLoadingButton()),
                     buildSizedBox(height: 10),
                     Row(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text("Don't have an Account",style: TextStyle(fontWeight: FontWeight.bold),),
                         buildSizedBox(width: 10),
                         GestureDetector(
-                          child:const Text("Sign Up",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff9a0000),fontSize: 17),),
+                          child:const Text("Sign Up",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,fontSize: 17),),
                           onTap: (){
                             Get.to(() => const SignUp());
                           },

@@ -6,8 +6,8 @@ import '../../../Common_widget/common_button.dart';
 import '../../../Common_widget/common_text.dart';
 import '../../../controller/getxcontroller/reset_pass_controller.dart';
 import '../auth/SignIn.dart';
+import '../auth/widget/auth  widget/confirm_password.dart';
 import '../auth/widget/auth  widget/phone.dart';
-import '../auth/widget/confirm_password.dart';
 class ResetPass extends StatelessWidget {
   const ResetPass({super.key});
 

@@ -18,10 +18,7 @@ class StartPage extends StatelessWidget {
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset("images/startpage.png"),
-              const SizedBox(
-                height: 200,
-              ),
-              CommonButton(buttonColor:const Color(0xff9a0000)
+              CommonButton(buttonColor:Colors.red
                   ,buttonName: "GET STARTED", onTap:(){
               Get.to(()=>const LanguageSelection())  ;
               })

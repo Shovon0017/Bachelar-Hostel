@@ -22,7 +22,7 @@ class CommonButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Card(
-        color: buttonColor ??const Color(0xff9a0000),
+        color: buttonColor ?? Colors.red,
         child: SizedBox(
           height: buttonHeight ?? 50,
           width: buttonWidth ?? MediaQuery.sizeOf(context).width,
