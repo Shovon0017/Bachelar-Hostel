@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
-import '../../database/productInfo.dart';
+import '../../database/hostelInfo.dart';
 import '../../model/productInfoModel.dart';
-class ProductInfoService {
-  static Future<ProductInfoModel?> productInfoService({required String id}) async {
+class HostelInfoService {
+  static Future<ProductInfoModel?> hostelInfoService({required String id}) async {
     try {
       ProductInfoModel descriptionModel = ProductInfoModel.fromJson(jsonDecode(jsonEncode(ProductInfoData.productInfoData)));
       return descriptionModel;
