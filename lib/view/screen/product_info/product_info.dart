@@ -12,8 +12,9 @@ import '../OrderInfo/OrderInfo.dart';
 import '../notification/notification.dart';
 
 class HostelInfo extends StatelessWidget {
-   HostelInfo({super.key, required this.id,});
+   HostelInfo({super.key, required this.id, required this.hostel,});
   final int id;
+  final Hostel hostel;
   var value=-1;
 
   @override
