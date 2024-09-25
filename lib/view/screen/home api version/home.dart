@@ -13,7 +13,7 @@ import '../product_info/product_info.dart';
 class Home extends StatelessWidget {
    Home({super.key});
 
-  get hostelList => [];
+
 
   @override
   Widget build(BuildContext context) {
@@ -121,8 +121,8 @@ class Home extends StatelessWidget {
                                   return InkWell(
                                     onTap: () {
                                       Get.to(() => HostelInfo(
-                                          id: index,
-                                          hostelData:hostelList[index]));
+                                          id: index, hostelData:,
+                                          ));
                                     },
                                     child: Card(
                                       elevation: 4,
