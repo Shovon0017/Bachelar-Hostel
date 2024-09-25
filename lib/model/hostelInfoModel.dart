@@ -1,27 +1,27 @@
 class HostelInfoModel {
-  List<Hostel>? hostel;
+  List<Hosteldetails>? hostelDetails;
 
-  HostelInfoModel({this.hostel});
+  HostelInfoModel({this.hostelDetails});
 
   HostelInfoModel.fromJson(Map<String, dynamic> json) {
     if (json['hostel'] != null) {
-      hostel = <Hostel>[];
+      hostelDetails = <Hosteldetails>[];
       json['hostel'].forEach((v) {
-        hostel!.add(new Hostel.fromJson(v));
+        hostelDetails!.add(new Hosteldetails.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.hostel != null) {
-      data['hostel'] = this.hostel!.map((v) => v.toJson()).toList();
+    if (this.hostelDetails != null) {
+      data['hostel'] = this.hostelDetails!.map((v) => v.toJson()).toList();
     }
     return data;
   }
 }
 
-class Hostel {
+class Hosteldetails {
   String? name;
   String? id;
   String? address;
@@ -32,7 +32,7 @@ class Hostel {
   String? environment;
   String? image;
 
-  Hostel(
+  Hosteldetails(
       {this.name,
         this.id,
         this.address,
@@ -43,7 +43,7 @@ class Hostel {
         this.environment,
         this.image});
 
-  Hostel.fromJson(Map<String, dynamic> json) {
+  Hosteldetails.fromJson(Map<String, dynamic> json) {
     name = json['name'];
     id = json['id'];
     address = json['address'];

@@ -12,11 +12,11 @@ import '../OrderInfo/OrderInfo.dart';
 import '../notification/notification.dart';
 
 class HostelInfo extends StatelessWidget {
-   HostelInfo({super.key, required this.id, required this.hostel,});
+   HostelInfo({super.key, required this.id, required this.productData,});
   final int id;
-  final Hostel hostel;
-  var value=-1;
 
+  var value=-1;
+   final Hosteldetails productData;
   @override
   Widget build(BuildContext context) {
     HostelInfoController controller = Get.put(HostelInfoController());

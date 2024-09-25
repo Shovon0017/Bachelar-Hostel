@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import '../api-controller/hostel_description.dart';
 class HostelInfoController extends GetxController {
   RxInt selectedImgIndex = 0.obs;
-  List<Hostel> hostelInfo = [];
+  List<Hosteldetails> hostelInfo = [];
   RxInt hostelQty = 1.obs;
   var detailsData = {}.obs;
   RxList<String> imageList = <String>[].obs;

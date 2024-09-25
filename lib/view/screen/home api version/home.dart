@@ -21,9 +21,9 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffFFFFFF),
       appBar: AppBar(
-        backgroundColor:Color(0xffFFFFFF) ,
+        backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 50, width: 150, child: Image.asset("images/appbar.png")),
+            height: 40, width: 150, child: Image.asset("images/pcmart.jpg")),
         centerTitle: true,
         actions: [
           Padding(
@@ -50,6 +50,7 @@ class Home extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
+              Text("CATEGORY",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
               CarouselSlider(
                   items: [
                     InkWell(
@@ -61,7 +62,7 @@ class Home extends StatelessWidget {
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image:
-                                    AssetImage('images/room02.jpg'),
+                                AssetImage('images/COMPUTER MONITORS.png'),
                                 fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(15)),
                       ),
@@ -73,7 +74,7 @@ class Home extends StatelessWidget {
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image:
-                                    AssetImage('images/room01.jpg'),
+                                AssetImage('images/PC ACCESSORIES (1).png'),
                                 fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(15)),
                       ),
@@ -84,7 +85,7 @@ class Home extends StatelessWidget {
                         margin: EdgeInsets.all(8),
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage('images/room03.jpg'),
+                                image: AssetImage('images/PC PARTS.png'),
                                 fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(15)),
                       ),
@@ -96,74 +97,71 @@ class Home extends StatelessWidget {
                       autoPlay: true,
                       autoPlayInterval: Duration(seconds: 3),
                       enlargeCenterPage: true)),
-              Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.red)),
-               SizedBox(height: 10),
+              Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
+              const SizedBox(height: 10),
               Obx(() => controller.isLoading.isTrue
-                  ?  Center(child: CircularProgressIndicator())
+                  ? const Center(child: CircularProgressIndicator())
                   : controller.hostelList.isEmpty
-                      ?  Center(
-                          child: CommonText(title: "Empty Product List"))
-                      : Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding:
-                                   EdgeInsets.symmetric(horizontal: 10),
-                              child: GridView.builder(
-                                physics:  PageScrollPhysics(),
-                                shrinkWrap: true,
-                                itemCount: controller.hostelList.length,
-                                gridDelegate:
-                                     SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
-                                ),
-                                itemBuilder: (context, index) {
-                                  return InkWell(
-                                    onTap: () {
-                                      Get.to(() => HostelInfo(
-                                          id: index, hostel:controller.finalHostelList[index],
-                                          ));
-                                    },
-                                    child: Card(
-                                      elevation: 4,
-                                      color: Colors.white,
-                                      child: SizedBox(
-                                        height: 220,
-                                        width:
-                                            MediaQuery.sizeOf(context).width /
-                                                2.2,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
-                                          children: [
-                                            SizedBox(
-                                                height: 100,
-                                                width: 100,
-                                                child: Image(
-                                                    image: AssetImage(
-                                                        "${controller.hostelList[index].image}"))),
-                                            CommonText(
-                                                title:
-                                                    "Name : ${controller.hostelList[index].name}"),
-                                            CommonText(
-                                                title:
-                                                    "Environment : ${controller.hostelList[index].environment}"),
-                                            CommonText(
-                                                title:
-                                                "Address : ${controller.hostelList[index].address}"),
-                                            CommonText(
-                                                title:
-                                                    "Price : ${controller.hostelList[index].price}Tk"),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  );
-                                },
+                  ? const Center(
+                  child: CommonText(title: "Empty Product List"))
+                  : Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding:
+                    const EdgeInsets.symmetric(horizontal: 10),
+                    child: GridView.builder(
+                      physics: const PageScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: controller.hostelList.length,
+                      gridDelegate:
+                      const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                      ),
+                      itemBuilder: (context, index) {
+                        return InkWell(
+                          onTap: () {
+                            Get.to(() => HostelInfo(
+                                id: index,
+                                productData:controller.hostelList[index]));
+                          },
+                          child: Card(
+                            elevation: 4,
+                            color: Colors.white,
+                            child: SizedBox(
+                              height: 220,
+                              width:
+                              MediaQuery.sizeOf(context).width /
+                                  2.2,
+                              child: Column(
+                                crossAxisAlignment:
+                                CrossAxisAlignment.center,
+                                children: [
+                                  SizedBox(
+                                      height: 100,
+                                      width: 100,
+                                      child: Image(
+                                          image: AssetImage(
+                                              "${controller.productList[index].image}"))),
+                                  CommonText(
+                                      title:
+                                      "ID : ${controller.productList[index].productId}"),
+                                  CommonText(
+                                      title:
+                                      "Name : ${controller.productList[index].nameEn}"),
+                                  CommonText(
+                                      title:
+                                      "Price : ${controller.productList[index].regPrice}Tk"),
+                                ],
                               ),
                             ),
-                          ],
-                        )),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              )),
             ],
           ),
         ),
