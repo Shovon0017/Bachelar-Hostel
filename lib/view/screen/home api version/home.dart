@@ -123,7 +123,7 @@ class Home extends StatelessWidget {
                           onTap: () {
                             Get.to(() => HostelInfo(
                                 id: index,
-                                productData:controller.hostelList[index]));
+                                hostelData:hostelList[index]));
                           },
                           child: Card(
                             elevation: 4,
