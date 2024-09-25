@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import '../../database/hostelInfo.dart';
 import '../../model/hostelInfoModel.dart';
 class HostelInfoService {
-  static Future<vv?> hostelInfoService({required String id}) async {
+  static Future<List<Hostel>> hostelInfoService({required String id}) async {
     try {
-      ProductInfoModel descriptionModel = ProductInfoModel.fromJson(jsonDecode(jsonEncode(ProductInfoData.productInfoData)));
-      return descriptionModel;
+     HostelInfoModel descriptionModel = HostelInfoModel.fromJson(jsonDecode(jsonEncode(HostelInfoData.hostelInfoData)));
+      return descriptionModel.hostel??[];
     } catch (e) {
       debugPrint("Error : $e");
     }
-    return null;
+    return [];
   }
 }

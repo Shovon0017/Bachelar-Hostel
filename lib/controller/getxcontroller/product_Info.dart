@@ -19,20 +19,20 @@ class HostelInfoController extends GetxController {
   }
 
   HostelInfoFun() async {
-    id = await Get.arguments ?? "0";
-    var a = await ProductInfoService.productInfoService(id: id);
-    if (a?.productDetails != null) {
-      for (var i in a?.productDetails?.images ?? []) {
-        imageList.add(i.toString());
-      }
+    isLoading.value = true; // Start loading
+    id = Get.arguments ?? "0"; // Get hostel ID from arguments
 
-      var data = {
-        "rating": a?.productDetails?.rating ?? "",
-        "review": a?.productDetails?.review ?? "",
-        "description": a?.productDetails?.description?.en ?? "",
+    var response = await HostelInfoService.hostelInfoService(id: id); // Fetch data
+
+    if (response.isNotEmpty) { // Check if response is not empty
+      imageList.clear(); // Clear previous images
+      detailsData.value = {
+        "rating": response[0].number,
+        "review": response[0].price,
+        "description":response[0].description,
       };
-      detailsData.addAll(data);
     }
+    isLoading.value = false;
   }
 
   addToCartProduct({required int productID, required int qty}) async {

@@ -15,9 +15,9 @@ class BottomNavBarController extends GetxController {
   RxInt page = 0.obs;
 
   List<Widget> bottomBarPages = [
-    const Home(),
-    const Cart(),
-    const Profile()
+     Home(),
+     Cart(),
+     Profile()
   ];
   @override
   void onInit() {

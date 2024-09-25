@@ -1,25 +1,25 @@
 
 
 
+import 'package:bachelar_hostel/model/hostelInfoModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../Common_widget/CommonIcon.dart';
 import '../../../Common_widget/common_button.dart';
 import '../../../controller/getxcontroller/product_Info.dart';
-import '../../../model/productListModel.dart';
 import '../OrderInfo/OrderInfo.dart';
 import '../notification/notification.dart';
 
-class ProductInfo extends StatelessWidget {
-   ProductInfo({super.key, required this.id, required this.productData});
+class HostelInfo extends StatelessWidget {
+   HostelInfo({super.key, required this.id, required this.hostelData});
   final int id;
   var value=-1;
-   final Products productData;
+   final Hostel hostelData;
   @override
   Widget build(BuildContext context) {
-    ProductInfoController controller = Get.put(ProductInfoController());
-    controller.productAmount.value = double.parse(productData.regPrice.toString());
+    HostelInfoController controller = Get.put(HostelInfoController());
+    controller.hostelAmount.value = double.parse(hostelData.price.toString());
     return Scaffold(backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
@@ -52,25 +52,25 @@ class ProductInfo extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 230,
-                        child: Image.asset("${productData.image}")
+                        child: Image.asset("${hostelData.image}")
                       )
                     ],
                   ),
                 ),
                 const SizedBox(height: 10),
-               Text("Rating:${productData.nameEn}"),
+               Text("Name:${hostelData.name}"),
                 const SizedBox(height: 10),
-                Text("Brand:${productData.brand}"),
+                Text("Number:${hostelData.number}"),
                 const SizedBox(height: 10),
-                Text("Stock:${productData.stock}"),
+                Text("Address:${hostelData.address}"),
                 const SizedBox(height: 10),
                 Container(
                   height: 200,
                   width: double.infinity,
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
-                  child: const Padding(
+                  child:  Padding(
                     padding: EdgeInsets.all(8.0),
-                    child: Text("Description:Welcome to Our Supershop! Discover a wide range of quality products at unbeatable prices. From fresh groceries and household essentials to the latest gadgets and fashion, we have everything you need in one place. Enjoy the convenience of shopping from home and paying securely with cash on delivery.",style: TextStyle(fontSize: 16),),
+                    child: Text("Description:${hostelData.description}"),
                   ),
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -78,7 +78,7 @@ class ProductInfo extends StatelessWidget {
                   children: [
                     CommonButton(
                       buttonWidth: 150,
-                        buttonColor: const Color(0xff9a0000),
+                        buttonColor: Colors.red,
                         buttonName: "Buy Now",
                         onTap: () {
                           Get.dialog(AlertDialog(
@@ -154,7 +154,7 @@ class ProductInfo extends StatelessWidget {
                                     const SizedBox(height: 10),
                                     CommonButton(
                                       buttonWidth: 150,
-                                        buttonColor:const Color(0xff9a0000),
+                                        buttonColor: Colors.red,
                                         buttonName: "Confirm Order", onTap:(){
                                       Get.to(()=>const OrderInfo());
                                     })

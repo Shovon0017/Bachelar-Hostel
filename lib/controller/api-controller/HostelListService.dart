@@ -18,7 +18,7 @@ class HostelListService{
     catch(e){
       log("error:$e");
     }
-    return[];
+    return [];
 
   }
 }

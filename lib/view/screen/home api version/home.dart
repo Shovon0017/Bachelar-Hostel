@@ -11,7 +11,9 @@ import '../notification/notification.dart';
 import '../product_info/product_info.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+   Home({super.key});
+
+  get hostelList => [];
 
   @override
   Widget build(BuildContext context) {
@@ -95,33 +97,32 @@ class Home extends StatelessWidget {
                       autoPlayInterval: Duration(seconds: 3),
                       enlargeCenterPage: true)),
               Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.red)),
-              const SizedBox(height: 10),
+               SizedBox(height: 10),
               Obx(() => controller.isLoading.isTrue
-                  ? const Center(child: CircularProgressIndicator())
+                  ?  Center(child: CircularProgressIndicator())
                   : controller.hostelList.isEmpty
-                      ? const Center(
+                      ?  Center(
                           child: CommonText(title: "Empty Product List"))
                       : Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
+                                   EdgeInsets.symmetric(horizontal: 10),
                               child: GridView.builder(
-                                physics: const PageScrollPhysics(),
+                                physics:  PageScrollPhysics(),
                                 shrinkWrap: true,
                                 itemCount: controller.hostelList.length,
                                 gridDelegate:
-                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                     SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
                                 ),
                                 itemBuilder: (context, index) {
                                   return InkWell(
                                     onTap: () {
-                                      // Get.to(() => ProductInfo(
-                                      //     id: index,
-                                      //     productData:
-                                      //         controller.productList[index]));
+                                      Get.to(() => HostelInfo(
+                                          id: index,
+                                          hostelData:hostelList[index]));
                                     },
                                     child: Card(
                                       elevation: 4,

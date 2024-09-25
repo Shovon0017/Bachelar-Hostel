@@ -4,7 +4,6 @@ import 'dart:ffi';
 import 'package:bachelar_hostel/model/hostelListModel.dart';
 import 'package:get/get.dart';
 
-import '../../model/productListModel.dart';
 import '../api-controller/HostelListService.dart';
 
 
