@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 
 import '../../../Common_widget/CommonIcon.dart';
 import '../../../Common_widget/common_button.dart';
-import '../../../controller/getxcontroller/product_Info.dart';
+import '../../../controller/getxcontroller/hostel_Info.dart';
 import '../OrderInfo/OrderInfo.dart';
 import '../notification/notification.dart';
 
@@ -51,17 +51,17 @@ class HostelInfo extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 230,
-                        child: Image.asset("${controller}")
+                        child: Image.asset("${controller.hostelList[id].image}")
                       )
                     ],
                   ),
                 ),
                 const SizedBox(height: 10),
-               Text("Name:${hostelData.name}"),
+               Text("Name:${controller.hostelList[id].name}"),
                 const SizedBox(height: 10),
-                Text("Number:${hostelData.number}"),
+                Text("Number:${controller.hostelList[id].number}"),
                 const SizedBox(height: 10),
-                Text("Address:${hostelData.address}"),
+                Text("Address:${controller.hostelList[id].address}"),
                 const SizedBox(height: 10),
                 Container(
                   height: 200,
@@ -69,7 +69,7 @@ class HostelInfo extends StatelessWidget {
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
                   child:  Padding(
                     padding: EdgeInsets.all(8.0),
-                    child: Text("Description:${hostelData.description}"),
+                    child: Text("Description:${controller.hostelList[id].description}"),
                   ),
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
