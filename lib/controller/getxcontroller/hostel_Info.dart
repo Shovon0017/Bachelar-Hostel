@@ -3,10 +3,10 @@ import 'package:bachelar_hostel/model/hostelInfoModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../api-controller/product_description.dart';
+import '../api-controller/hostel_description.dart';
 class HostelInfoController extends GetxController {
   RxInt selectedImgIndex = 0.obs;
-  List<Hostel> hostelList = [];
+  List<Hostel> hostelInfo = [];
   RxInt hostelQty = 1.obs;
   var detailsData = {}.obs;
   RxList<String> imageList = <String>[].obs;

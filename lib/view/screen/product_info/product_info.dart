@@ -51,17 +51,17 @@ class HostelInfo extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 230,
-                        child: Image.asset("${controller.hostelList[id].image}")
+                        child: Image.asset("${controller.hostelInfo[id].image}")
                       )
                     ],
                   ),
                 ),
                 const SizedBox(height: 10),
-               Text("Name:${controller.hostelList[id].name}"),
+               Text("Name:${controller.hostelInfo[id].name}"),
                 const SizedBox(height: 10),
-                Text("Number:${controller.hostelList[id].number}"),
+                Text("Number:${controller.hostelInfo[id].number}"),
                 const SizedBox(height: 10),
-                Text("Address:${controller.hostelList[id].address}"),
+                Text("Address:${controller.hostelInfo[id].address}"),
                 const SizedBox(height: 10),
                 Container(
                   height: 200,
@@ -69,7 +69,7 @@ class HostelInfo extends StatelessWidget {
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
                   child:  Padding(
                     padding: EdgeInsets.all(8.0),
-                    child: Text("Description:${controller.hostelList[id].description}"),
+                    child: Text("Description:${controller.hostelInfo[id].description}"),
                   ),
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
