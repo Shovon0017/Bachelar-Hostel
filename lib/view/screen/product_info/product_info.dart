@@ -12,14 +12,13 @@ import '../OrderInfo/OrderInfo.dart';
 import '../notification/notification.dart';
 
 class HostelInfo extends StatelessWidget {
-   HostelInfo({super.key, required this.id, required this.hostelData});
+   HostelInfo({super.key, required this.id,});
   final int id;
   var value=-1;
-   final Hostel hostelData;
+
   @override
   Widget build(BuildContext context) {
     HostelInfoController controller = Get.put(HostelInfoController());
-    controller.hostelAmount.value = double.parse(hostelData.price.toString());
     return Scaffold(backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
@@ -52,7 +51,7 @@ class HostelInfo extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 230,
-                        child: Image.asset("${hostelData.image}")
+                        child: Image.asset("${controller}")
                       )
                     ],
                   ),
