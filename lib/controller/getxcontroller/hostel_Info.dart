@@ -5,7 +5,7 @@ import 'package:bachelar_hostel/model/hostelListModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ProductInfoController extends GetxController {
+class HostelInfoController extends GetxController {
   RxInt selectedImgIndex = 0.obs;
   RxInt productQty = 1.obs;
   var detailsData = {}.obs;
