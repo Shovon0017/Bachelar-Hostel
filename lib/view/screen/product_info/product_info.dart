@@ -20,6 +20,7 @@ class HostelInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     HostelInfoController controller = Get.put(HostelInfoController());
+
     return Scaffold(backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
@@ -52,13 +53,13 @@ class HostelInfo extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 230,
-                        child: Image.asset("${controller.}")
+                        child: Image.asset("${controller.imageList}")
                       )
                     ],
                   ),
                 ),
                 const SizedBox(height: 10),
-               Text("Name:${controller.hostelInfo[id].name}"),
+               Text("Name:${controller.}"),
                 const SizedBox(height: 10),
                 Text("Number:${controller.hostelInfo[id].number}"),
                 const SizedBox(height: 10),
