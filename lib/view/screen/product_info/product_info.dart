@@ -59,11 +59,11 @@ class HostelInfo extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-               Text("Name:${controller.}"),
+               Text("Name:${hostelData.name}"),
                 const SizedBox(height: 10),
-                Text("Number:${controller.hostelInfo[id].number}"),
+                Text("Number:${hostelData.number}"),
                 const SizedBox(height: 10),
-                Text("Address:${controller.hostelInfo[id].address}"),
+                Text("Address:${hostelData.address}"),
                 const SizedBox(height: 10),
                 Container(
                   height: 200,
@@ -71,7 +71,7 @@ class HostelInfo extends StatelessWidget {
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
                   child:  Padding(
                     padding: EdgeInsets.all(8.0),
-                    child: Text("Description:${controller.hostelInfo[id].description}"),
+                    child: Text("Description:${hostelData.description}"),
                   ),
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
