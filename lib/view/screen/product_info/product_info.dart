@@ -52,7 +52,7 @@ class HostelInfo extends StatelessWidget {
                     children: [
                       SizedBox(
                         height: 230,
-                        child: Image.asset("${controller.hostelInfo[id].image}")
+                        child: Image.asset("${controller.}")
                       )
                     ],
                   ),
