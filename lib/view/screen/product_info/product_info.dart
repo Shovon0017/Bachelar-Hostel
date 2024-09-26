@@ -19,7 +19,7 @@ class HostelInfo extends StatelessWidget {
    final Hosteldetails hostelData;
   @override
   Widget build(BuildContext context) {
-    HostelInfoController controller = Get.put(HostelInfoController());
+    ProductInfoController controller = Get.put(ProductInfoController());
     return Scaffold(backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
