@@ -121,9 +121,9 @@ class Home extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return InkWell(
                           onTap: () {
-                            Get.to(() => HostelInfo(
-                                id: index,
-                                hostelData:controller.hostelList[index]));
+                            // Get.to(() => HostelInfo(
+                            //     id: index,
+                            //     hostelData:controller.hostelList[index]));
                           },
                           child: Card(
                             elevation: 4,
