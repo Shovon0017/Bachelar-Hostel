@@ -142,16 +142,16 @@ class Home extends StatelessWidget {
                                       width: 100,
                                       child: Image(
                                           image: AssetImage(
-                                              "${controller.productList[index].image}"))),
+                                              "${controller.hostelList[index].image}"))),
                                   CommonText(
                                       title:
-                                      "ID : ${controller.productList[index].productId}"),
+                                      "ID : ${controller.hostelList[index].id}"),
                                   CommonText(
                                       title:
-                                      "Name : ${controller.productList[index].nameEn}"),
+                                      "Name : ${controller.hostelList[index].name}"),
                                   CommonText(
                                       title:
-                                      "Price : ${controller.productList[index].regPrice}Tk"),
+                                      "Price : ${controller.hostelList[index].price}Tk"),
                                 ],
                               ),
                             ),
