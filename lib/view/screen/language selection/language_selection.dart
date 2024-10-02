@@ -13,7 +13,7 @@ class LanguageSelection extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal:10),
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("images/english select logo.png"),
+              Image.asset("images/languagee.png"),
 
               CommonButton(buttonColor:Colors.grey ,
                   buttonName: "বাংলা",textColor: Colors.white, onTap: (){
