@@ -74,7 +74,7 @@ class Home extends StatelessWidget {
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image:
-                                AssetImage('images/PC ACCESSORIES (1).png'),
+                                AssetImage('images/room02.jpg'),
                                 fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(15)),
                       ),
