@@ -80,7 +80,7 @@ class HostelInfo extends StatelessWidget {
                     CommonButton(
                       buttonWidth: 150,
                         buttonColor: Colors.red,
-                        buttonName: "Buy Now",
+                        buttonName: "Book Now",
                         onTap: () {
                           Get.dialog(AlertDialog(
                               title: const Text("Order Info",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue)),

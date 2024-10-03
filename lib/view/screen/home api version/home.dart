@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 40, width: 150, child: Image.asset("images/pcmart.jpg")),
+            height: 40, width: 150, child: Image.asset("images/appbar.png")),
         centerTitle: true,
         actions: [
           Padding(
