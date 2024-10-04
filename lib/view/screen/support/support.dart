@@ -21,12 +21,12 @@ class Support extends StatelessWidget {
                    const Text("How May we Help you Today",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
                    const SizedBox(height: 20),
                    CommonButton(
-                       buttonColor: const Color(0xff9a0000),
+                       buttonColor:Colors.red,
                        buttonName: "Share the problem in the Facebook group",
                        onTap: () {}),
                    const SizedBox(height: 10),
                    CommonButton(
-                       buttonColor: const Color(0xff9a0000),
+                       buttonColor:Colors.red,
                        buttonName: "Feedback & Suggesstion",
                        onTap: () {}),
                    const SizedBox(

@@ -63,7 +63,7 @@ class Paylater extends StatelessWidget {
             ),
             CommonButton(
               buttonWidth:100,
-                buttonColor: const Color(0xff9a0000),
+                buttonColor:Colors.red,
                 buttonName: "OK", onTap: (){
               Get.offAll(()=>const NavigationBarShow());
             })

@@ -156,7 +156,7 @@ class OrderInfo extends StatelessWidget {
               ])),
               const SizedBox(height: 10),
               CommonButton(
-                  buttonColor: const Color(0xff9a0000),
+                  buttonColor:Colors.red,
                   buttonName: "Pay Now", onTap: ()async{
                 debugPrint("=========== Start Call ============");
                 await homeController.sslCommerzCustomizedCall();

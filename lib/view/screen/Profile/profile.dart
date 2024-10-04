@@ -53,7 +53,7 @@ class _ProfileState extends State<Profile> {
                 width: double.infinity,
                 child: Card(
                   elevation: 5,
-                  color: const Color(0xff9a0000),
+                  color:Colors.red,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,

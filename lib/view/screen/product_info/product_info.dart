@@ -27,7 +27,7 @@ class HostelInfo extends StatelessWidget {
         title: SizedBox(
             height: 32,
             width: 114,
-            child: Image.asset("images/pcmart.jpg")),
+            child: Image.asset("images/appbar.png")),
         centerTitle: true,
         actions: [
           Padding(
@@ -79,8 +79,8 @@ class HostelInfo extends StatelessWidget {
               children: [
                 CommonButton(
                     buttonWidth: 150,
-                    buttonColor: const Color(0xff9a0000),
-                    buttonName: "Buy Now",
+                    buttonColor:Colors.red,
+                    buttonName: "Book Now",
                     onTap: () {
                       Get.dialog(AlertDialog(
                           title: const Text("Order Info",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue)),

@@ -245,7 +245,7 @@ class Cart extends StatelessWidget {
                   Card(
                     margin:
                         const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
-                    color: const Color(0xff9a0000),
+                    color:Colors.red,
                     shape: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),
                         borderSide: BorderSide.none),
