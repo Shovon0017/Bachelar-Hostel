@@ -97,7 +97,7 @@ class Home extends StatelessWidget {
                       autoPlay: true,
                       autoPlayInterval: Duration(seconds: 3),
                       enlargeCenterPage: true)),
-              Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
+              Text("ALL HOSTELS",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
               const SizedBox(height: 10),
               Obx(() => controller.isLoading.isTrue
                   ? const Center(child: CircularProgressIndicator())
