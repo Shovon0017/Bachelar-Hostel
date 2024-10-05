@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../view/screen/Profile/profile.dart';
-import '../../view/screen/cart/cart.dart';
 import '../../view/screen/home api version/home.dart';
 class BottomNavBarController extends GetxController {
   final pageController = PageController(initialPage: 0);
@@ -16,7 +15,6 @@ class BottomNavBarController extends GetxController {
 
   List<Widget> bottomBarPages = [
      Home(),
-     Cart(),
      Profile()
   ];
   @override
