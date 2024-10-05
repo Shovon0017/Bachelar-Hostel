@@ -51,15 +51,15 @@ class NavigationBarShow extends StatelessWidget {
           ),
           BottomBarItem(
             inActiveItem: Icon(
-              Icons.shopping_cart,
+              Icons.category_outlined,
               color: Colors.white,
 
             ),
             activeItem: Icon(
-              Icons.shopping_cart,
+              Icons.category_outlined,
               color: Colors.red,
             ),
-            itemLabel: 'Cart',
+            itemLabel: 'Category',
           ),
           BottomBarItem(
             inActiveItem: Icon(
